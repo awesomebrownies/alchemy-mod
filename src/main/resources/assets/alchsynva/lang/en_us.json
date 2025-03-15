@@ -1,3 +1,4 @@
 {
-  "item.alchemy.ladle": "Ladle"
+  "item.alchemy.ladle": "Ladle",
+  "itemGroup.tutorial.test_group": "Alchemy"
 }
