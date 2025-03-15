@@ -17,7 +17,7 @@ public final class ModItems {
     private ModItems() {
     }
 
-    public static final Item LADLE = register("ladle", Item::new, new Item.Settings());
+    public static final Ladle LADLE = (Ladle) register("ladle", Ladle::new, new Item.Settings());
 
     public static Item register(String path, Function<Item.Settings, Item> factory, Item.Settings settings) {
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of("ladle", path));
