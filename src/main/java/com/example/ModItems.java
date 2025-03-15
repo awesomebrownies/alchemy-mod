@@ -5,6 +5,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
@@ -29,5 +31,7 @@ public final class ModItems {
 
 
     public static void initialize() {
+        // Just log that initialization happened
+        AlchemyMod.LOGGER.info("Initializing ModItems");
     }
 }

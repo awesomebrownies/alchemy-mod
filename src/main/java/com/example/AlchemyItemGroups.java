@@ -24,6 +24,6 @@ public class AlchemyItemGroups {
 
         public static void initialize()
         {
-            Registry.register(Registries.ITEM_GROUP, Identifier.of("alchemy", "alchemy_mod"), ALCHEMY_GROUP);
+            Registry.register(Registries.ITEM_GROUP, Identifier.of("alchemy_mod", "alchemy_group"), ALCHEMY_GROUP);
         }
 }

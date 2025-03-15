@@ -25,7 +25,7 @@ public class Ladle extends Item {
 
 
 
-        user.sendMessage(new LiteralText("This item is to be used on a cauldron containing water."), false);
+//        user.sendMessage(new LiteralText("This item is to be used on a cauldron containing water."), false);
 
         return ActionResult.SUCCESS;
 
