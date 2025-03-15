@@ -20,6 +20,7 @@ public class AlchemyMod implements ModInitializer {
         // Proceed with mild caution.
 
         ModItems.initialize();
+        AlchemyItemGroups.initialize();
         LOGGER.info("Hello Fabric world!");
     }
 }
