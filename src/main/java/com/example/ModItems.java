@@ -20,7 +20,7 @@ public final class ModItems {
     public static final Ladle LADLE = (Ladle) register("ladle", Ladle::new, new Item.Settings());
 
     public static Item register(String path, Function<Item.Settings, Item> factory, Item.Settings settings) {
-        final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of("ladle", path));
+        final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of("AlchemyMod", path));
         return Items.register(registryKey, factory, settings);
     }
 
