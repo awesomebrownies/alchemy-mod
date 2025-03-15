@@ -7,6 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.Items;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -25,7 +26,13 @@ public class Ladle extends Item {
 
 
 
-        user.sendMessage(new LiteralText("This item is to be used on a cauldron containing water."), false);
+        Text message = Text.literal("This item is meant to be used on a cauldron containing water.");
+
+        if(user instanceof ServerPlayerEntity)
+        {
+            ((ServerPlayerEntity) user).sendMessage(message, false);
+        }
+
 
         return ActionResult.SUCCESS;
 
