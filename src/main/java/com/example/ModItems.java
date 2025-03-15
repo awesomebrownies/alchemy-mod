@@ -21,7 +21,7 @@ public final class ModItems {
 
     public static final RegistryKey<ItemGroup> CUSTOM_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(AlchemyMod.MOD_ID, "alchemy"));
     public static final ItemGroup CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(ModItems.LADLE))
+            .icon(() -> new ItemStack(Items.EXPERIENCE_BOTTLE))
             .displayName(Text.translatable("itemGroup.fabric_docs_reference"))
             .build();
 
