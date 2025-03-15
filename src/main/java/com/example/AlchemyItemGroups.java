@@ -14,7 +14,7 @@ public class AlchemyItemGroups {
 
 
         public static final ItemGroup ALCHEMY_GROUP = FabricItemGroup.builder()
-                .icon(() -> new ItemStack(Items.POTION))
+                .icon(() -> new ItemStack(Items.EXPERIENCE_BOTTLE))
                 .displayName(Text.translatable("itemGroup.tutorial.test_group"))
                 .entries((context, entries) -> {
                     entries.add(ModItems.LADLE);

@@ -5,25 +5,16 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.fabricmc.fabric.api.registry.*;
-import net.minecraft.registry.Registry;
 
 
 import java.util.function.Function;
 
 
 public final class ModItems {
-
-    public static final RegistryKey<ItemGroup> CUSTOM_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(AlchemyMod.MOD_ID, "alchemy"));
-    public static final ItemGroup CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(Items.EXPERIENCE_BOTTLE))
-            .displayName(Text.translatable("itemGroup.fabric_docs_reference"))
-            .build();
 
     private ModItems() {
     }
