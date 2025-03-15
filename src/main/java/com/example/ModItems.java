@@ -35,6 +35,8 @@ public final class ModItems {
         return Items.register(registryKey, factory, settings);
     }
 
+
+
     public static void initialize() {
     }
 }
