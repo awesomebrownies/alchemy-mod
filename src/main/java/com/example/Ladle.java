@@ -11,6 +11,8 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
+import net.minecraft.text.Text;
+import net.minecraft.network.*;
 
 public class Ladle extends Item {
     public Ladle(Settings settings) {
@@ -21,7 +23,10 @@ public class Ladle extends Item {
     public ActionResult use(World world, PlayerEntity user, Hand hand)
     {
 
-        user.playSound(SoundEvents.ENTITY_GENERIC_SPLASH, 1.0F, 1.0F);
+
+
+        user.sendMessage(new LiteralText("This item is to be used on a cauldron containing water."), false);
+
         return ActionResult.SUCCESS;
 
     }
@@ -35,11 +40,13 @@ public class Ladle extends Item {
 
         ItemStack bottle = null;
         if (blockstate.getBlock() == Blocks.WATER_CAULDRON) {
+
+            assert player != null;
+            player.playSound(SoundEvents.ENTITY_GENERIC_SPLASH, 1.0F, 1.0F);
+
             bottle = new ItemStack(Items.GLASS_BOTTLE, 1);
 
-
-            if (player != null && bottle != null)
-                player.giveItemStack(bottle);
+            player.giveItemStack(bottle);
 
             return ActionResult.SUCCESS;
         }
