@@ -32,7 +32,7 @@ public class UnclearIntentEffect extends StatusEffect {
         if(entity instanceof PlayerEntity player && entity.getWorld().isClient){
             dialogueTimer++;
             if(dialogueTimer > dialogueInterval){
-                handleKeybindSwap((PlayerEntity) entity);
+//                handleKeybindSwap((PlayerEntity) entity);
 
                 currentDialogue = TrashbeardHandler.retrieveRandomDialogue();
                 player.sendMessage(Text.of(currentDialogue[0]), true);
@@ -50,7 +50,7 @@ public class UnclearIntentEffect extends StatusEffect {
         }
     }
 
-    private static void handleKeybindSwap(PlayerEntity player){
-        //implemementation for swapping keybinds
+    private void handleKeybindSwap(PlayerEntity player){
+        //implementation for swapping keybinds
     }
 }
