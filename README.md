@@ -7,6 +7,11 @@
 Brew together an `awkward potion` + `potato` to create:
 `Potion of Unclear Intent`~ !
 
+### Installation
+1. Download the .zip and extract it from the releases section.
+2. Navigate to your minecraft mods folder, and drag in the .jar file
+3. Ensure you have the fabric jar from here: https://fabricmc.net/use/installer/
+
 ## Mechanics
 Drinking the potion of Unclear Intent gives you the effect `Tinkering Trashbeard`!
 
