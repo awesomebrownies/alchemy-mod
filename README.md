@@ -15,7 +15,7 @@ Brew together an `awkward potion` + `potato` to create:
 ## Mechanics
 Drinking the potion of Unclear Intent gives you the effect `Tinkering Trashbeard`!
 
-*Captain Trashbeard Stirs* "Oh! Fancy seeing you there..."
+*Captain Trashbeard Stirs* "Agh! Those darn cords have me tangled up in circles"
 
 Unfortunately, to the audience, Captain Trashbeard fumbles around and manages to swap their keybind for `Sneak` to `Attack/Destroy`. "Oo-ooops!". 
 
