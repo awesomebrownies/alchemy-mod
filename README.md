@@ -18,3 +18,6 @@ Drinking the potion of Unclear Intent gives you the effect `Tinkering Trashbeard
 *Captain Trashbeard Stirs* "Oh! Fancy seeing you there..."
 
 Unfortunately, to the audience, Captain Trashbeard fumbles around and manages to swap their keybind for `Sneak` to `Attack/Destroy`. "Oo-ooops!". 
+
+
+[![Youtube](https://img.youtube.com/vi/rqjQ42EFRAQ/0.jpg)](https://youtu.be/rqjQ42EFRAQ)
