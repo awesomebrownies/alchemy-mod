@@ -17,7 +17,6 @@ public class KeybindSwapImpl implements net.infiltration.KeybindSwapClient{
         KeyBinding key2 = null;
 
         for(KeyBinding keyBinding : keyBindings){
-            AlchemyMod.LOGGER.info(keyBinding.getTranslationKey());
 
             if(keyBinding.getTranslationKey().equals(swap.getKey1())){
                 key1 = keyBinding;
