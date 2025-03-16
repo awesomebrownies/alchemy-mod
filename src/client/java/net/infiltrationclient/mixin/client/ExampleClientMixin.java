@@ -1,4 +1,4 @@
-package net.infiltration.mixin.client;
+package net.infiltrationclient.mixin.client;
 
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;

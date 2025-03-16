@@ -19,7 +19,7 @@
 			"net.infiltration.AlchemyMod"
 		],
 		"client": [
-			"net.infiltration.AlchemyModClient"
+			"net.infiltrationclient.AlchemyModClient"
 		]
 	},
 	"mixins": [

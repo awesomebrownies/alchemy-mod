@@ -11,7 +11,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
-import net.minecraft.nbt.NbtCompound;
 
 public class ModPotions {
     public static final RegistryEntry<Potion> UNCLEAR_INTENT_POTION = registerPotion("unclear_intent_potion",

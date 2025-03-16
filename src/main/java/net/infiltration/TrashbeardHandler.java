@@ -4,7 +4,6 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 
-import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class TrashbeardHandler {
@@ -27,7 +26,7 @@ public class TrashbeardHandler {
         return dialogue[ThreadLocalRandom.current().nextInt(0, dialogue.length)];
     }
     public static Swap retrieveSwap(){
-        String[] keys = {"Jump", "Sneak", "Sprint", "Strafe Left", "Strafe Right", "Walk Backward", "Walk Forward", "Attack/Destroy", "Use Item/Place Block"};
+        String[] keys = {"key.jump", "key.sneak", "key.sprint", "key.left", "key.right", "key.back", "key.forward", "key.attack", "key.use"};
         int firstIndex = ThreadLocalRandom.current().nextInt(0, keys.length);
         String randomKey = keys[firstIndex];
         int secondIndex = ThreadLocalRandom.current().nextInt(0, keys.length-1);
