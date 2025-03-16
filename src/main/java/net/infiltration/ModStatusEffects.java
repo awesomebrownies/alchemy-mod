@@ -1,6 +1,5 @@
 package net.infiltration;
 
-import net.infiltration.AlchemyMod;
 import net.infiltration.statuseffect.UnclearIntentEffect;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.registry.Registries;

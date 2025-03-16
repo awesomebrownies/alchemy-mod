@@ -1,14 +1,10 @@
 package net.infiltration.statuseffect;
 
-import com.mojang.authlib.minecraft.client.MinecraftClient;
-import net.infiltration.Swap;
-import net.infiltration.TaskScheduler;
-import net.infiltration.TrashbeardHandler;
+import net.infiltration.*;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 
 import java.util.concurrent.ThreadLocalRandom;
@@ -33,18 +29,18 @@ public class UnclearIntentEffect extends StatusEffect {
         if(entity instanceof PlayerEntity player && entity.getWorld().isClient){
             dialogueTimer++;
             if(dialogueTimer > dialogueInterval){
-//                handleKeybindSwap((PlayerEntity) entity);
 
                 currentDialogue = TrashbeardHandler.retrieveRandomDialogue();
-                player.playSound(SoundEvents.ENTITY_VILLAGER_NO);
                 player.sendMessage(Text.of(currentDialogue[0]), true);
 
                 TaskScheduler.scheduleTask(() -> player.sendMessage(Text.of(currentDialogue[1]), true), 40);
 
 
                 currentSwap = TrashbeardHandler.retrieveSwap();
-                player.playSound(SoundEvents.BLOCK_LEVER_CLICK);
-                TaskScheduler.scheduleTask(() -> player.sendMessage(Text.of(currentSwap.getKey1() + " -> " + currentSwap.getKey2()), true), 80);
+                TaskScheduler.scheduleTask(() -> player.sendMessage(Text.of(keyPrettifier(currentSwap.getKey1()) + " -> "
+                        + keyPrettifier(currentSwap.getKey2())), true), 80);
+
+                handleKeybindSwap((PlayerEntity) entity);
 
                 dialogueTimer = 0;
                 dialogueInterval = ThreadLocalRandom.current().nextInt(15*20, 20*20);
@@ -53,7 +49,25 @@ public class UnclearIntentEffect extends StatusEffect {
         }
     }
 
-    private void handleKeybindSwap(PlayerEntity player){
+    private static String keyPrettifier(String key){
+        return switch (key) {
+            case "key.jump" -> "Jump";
+            case "key.sneak" -> "Sneak";
+            case "key.sprint" -> "Sprint";
+            case "key.left" -> "Left Strafe";
+            case "key.right" -> "Right Strafe";
+            case "key.back" -> "Walk Backward";
+            case "key.forward" -> "Walk Forward";
+            case "key.attack" -> "Attack";
+            case "key.use" -> "Use";
+            default -> key;
+        };
+    }
+
+    private static void handleKeybindSwap(PlayerEntity player){
         //implementation for swapping keybinds
+        if(player.getWorld().isClient){
+            KeybindSwapProxy.handleKeybindSwap(player, currentSwap);
+        }
     }
 }

@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "net.infiltration.mixin.client",
+	"package": "net.infiltrationclient.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
 		"ExampleClientMixin"

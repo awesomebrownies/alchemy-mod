@@ -1,11 +1,8 @@
 package net.infiltration.mixin;
 
-import net.infiltration.AlchemyMod;
 import net.infiltration.ModStatusEffects;
-import net.infiltration.potion.ModPotions;
 import net.infiltration.statuseffect.UnclearIntentEffect;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
