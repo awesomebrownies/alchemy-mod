@@ -21,9 +21,7 @@ public class Ladle extends Item {
     @Override
     public ActionResult use(World world, PlayerEntity user, Hand hand)
     {
-//        user.sendMessage(new LiteralText("This item is to be used on a cauldron containing water."), false);
         return ActionResult.SUCCESS;
-
     }
 
     @Override

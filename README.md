@@ -1,9 +1,13 @@
-# Fabric Example Mod
+# Scrappy Alchemy
 
 ## Setup
 
-For setup instructions please see the [fabric documentation page](https://docs.fabricmc.net/develop/getting-started/setting-up-a-development-environment) that relates to the IDE that you are using.
+Brew together an `awkward potion` + `potato` to create:
+`Potion of Unclear Intent`~ !
 
-## License
+## Mechanics
+Drinking the potion of Unclear Intent gives you the effect `Tinkering Trashbeard`!
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+*Captain Trashbeard Stirs* "Oh! Fancy seeing you there..."
+
+Unfortunately, to the audience, Captain Trashbeard fumbles around and manages to swap their keybind for `Sneak` to `Attack/Destroy`. "Oo-ooops!". 
