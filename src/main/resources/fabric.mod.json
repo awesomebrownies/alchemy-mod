@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "alchemy_mod",
 	"version": "${version}",
-	"name": "Alchemy Mod",
+	"name": "Scrappy Alchemy",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.AlchemyMod"
+			"net.infiltration.AlchemyMod"
 		],
 		"client": [
-			"com.example.AlchemyModClient"
+			"net.infiltration.AlchemyModClient"
 		]
 	},
 	"mixins": [

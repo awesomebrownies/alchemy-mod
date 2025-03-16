@@ -1,6 +1,6 @@
 {
-	"parent": "minecraft:item/generated",
-	"textures": {
-		"layer0": "alchemy_mod:item/ladle"
-	}
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "alchemy_mod:item/ladle"
+  }
 }

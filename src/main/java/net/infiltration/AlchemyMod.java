@@ -1,4 +1,4 @@
-package com.example;
+package net.infiltration;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -19,7 +19,7 @@ public class AlchemyMod implements ModInitializer {
         // However, some things (like resources) may still be uninitialized.
         // Proceed with mild caution.
 
-        ModItems.initialize();
+        ModItems.registerModItems();
         AlchemyItemGroups.initialize();
         LOGGER.info("Hello Fabric world!");
     }

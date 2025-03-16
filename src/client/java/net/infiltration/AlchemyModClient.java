@@ -1,4 +1,4 @@
-package com.example;
+package net.infiltration;
 
 import net.fabricmc.api.ClientModInitializer;
 
