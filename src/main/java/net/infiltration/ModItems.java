@@ -2,7 +2,9 @@ package net.infiltration;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.infiltration.potion.ModPotions;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryKey;
@@ -20,6 +22,8 @@ public final class ModItems {
 
     public static final Ladle LADLE = (Ladle) registerItem("ladle", Ladle::new, new Item.Settings());
 
+    public static final UnclearIntentPotion UNCLEAR_INTENT_POTION = (UnclearIntentPotion) registerItem("unclear_intent_potion", UnclearIntentPotion::new, new Item.Settings());
+
     public static Item registerItem(String path, Function<Item.Settings, Item> factory, Item.Settings settings) {
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of("alchemy_mod", path));
         return Items.register(registryKey, factory, settings);
@@ -27,6 +31,7 @@ public final class ModItems {
 
     private static void customPotions(FabricItemGroupEntries entries){
         entries.add(LADLE);
+        entries.add(UNCLEAR_INTENT_POTION);
     }
 
 

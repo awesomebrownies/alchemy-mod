@@ -1,6 +1,8 @@
 package net.infiltration;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.infiltration.potion.ModPotions;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
