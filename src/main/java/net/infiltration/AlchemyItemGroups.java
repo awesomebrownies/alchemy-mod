@@ -6,6 +6,8 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtOps;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -19,6 +21,14 @@ public class AlchemyItemGroups {
                 .displayName(Text.translatable("itemGroup.tutorial.test_group"))
                 .entries((context, entries) -> {
                     entries.add(ModItems.LADLE);
+
+
+//                    ItemStack unclearIntentPotion = new ItemStack(Items.POTION);
+//                    NbtCompound tag = unclearIntentPotion.toNbt();
+//                    tag.putString("Potion", "unclear_intent_potion");
+//
+//                    entries.add(unclearIntentPotion);
+
                 })
                 .build();
 

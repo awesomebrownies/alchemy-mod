@@ -21,6 +21,6 @@ public class UnclearIntentEffect extends StatusEffect {
     }
 
     private void handleKeybindSwap(PlayerEntity player){
-        //implemementation for swapping keybinds
+        //implementation for swapping keybinds
     }
 }
