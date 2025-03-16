@@ -8,6 +8,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 
 import java.util.concurrent.ThreadLocalRandom;
@@ -35,12 +36,14 @@ public class UnclearIntentEffect extends StatusEffect {
 //                handleKeybindSwap((PlayerEntity) entity);
 
                 currentDialogue = TrashbeardHandler.retrieveRandomDialogue();
+                player.playSound(SoundEvents.ENTITY_VILLAGER_NO);
                 player.sendMessage(Text.of(currentDialogue[0]), true);
 
                 TaskScheduler.scheduleTask(() -> player.sendMessage(Text.of(currentDialogue[1]), true), 40);
 
 
                 currentSwap = TrashbeardHandler.retrieveSwap();
+                player.playSound(SoundEvents.BLOCK_LEVER_CLICK);
                 TaskScheduler.scheduleTask(() -> player.sendMessage(Text.of(currentSwap.getKey1() + " -> " + currentSwap.getKey2()), true), 80);
 
                 dialogueTimer = 0;
