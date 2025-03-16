@@ -3,25 +3,24 @@ package net.infiltration;
 import net.fabricmc.api.ModInitializer;
 
 import net.infiltration.potion.ModPotions;
+import net.infiltration.ModStatusEffects;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class AlchemyMod implements ModInitializer {
     public static final String MOD_ID = "alchemy_mod";
-
-    // This logger is used to write text to the console and the log file.
-    // It is considered best practice to use your mod id as the logger's name.
-    // That way, it's clear which mod wrote info, warnings, and errors.
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     @Override
     public void onInitialize() {
-        // This code runs as soon as Minecraft is in a mod-load-ready state.
-        // However, some things (like resources) may still be uninitialized.
-        // Proceed with mild caution.
-
+        // Register everything in the correct order
+        ModStatusEffects.registerStatusEffects();
         ModItems.registerModItems();
+        ModPotions.registerPotions();
         AlchemyItemGroups.initialize();
-        LOGGER.info("Hello Fabric world!");
+
+
+
+        LOGGER.info("AlchemyMod initialized successfully!");
     }
 }
