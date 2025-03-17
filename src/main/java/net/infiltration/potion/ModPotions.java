@@ -24,7 +24,7 @@ public class ModPotions {
         AlchemyMod.LOGGER.info("Registering potions for " + AlchemyMod.MOD_ID);
 
         FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
-            builder.registerPotionRecipe(Potions.AWKWARD, Items.POTATO, UNCLEAR_INTENT_POTION);
+            builder.registerPotionRecipe(Potions.AWKWARD, Items.TRIPWIRE_HOOK, UNCLEAR_INTENT_POTION);
         });
     }
 }
