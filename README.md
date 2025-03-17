@@ -1,7 +1,7 @@
 # Tangled in Scrapyard
 <img src="https://scrapyard.hackclub.com/elements/wordmark.svg" width="200" >
 
-`Tinkering Trashbeard` effect is gained from a certain potion.
+Scrapyard is a hackathon about making stupid inventions with others, and this project is a submission.
 
 **Captain Trashbeard Stirs** "*Agh! Those darn cords have me tangled up in circles.*" Unfortunately, to her dismay, Captain Trashbeard fumbles around and manages to swap her keybind for `Sneak` to `Attack/Destroy`. "*Oo-ooops!*". 
 
