@@ -13,5 +13,7 @@ This project was created using **Java** and the **Fabric API**. It has both clie
 
 **Download Latest Release**: Drag `tangled-in-scrapyard.jar` into your `minecraft/mods` folder
 
+![Youtube](https://img.youtube.com/vi/rqjQ42EFRAQ/0.jpg)](https://youtu.be/rqjQ42EFRAQ)
 
-[![Youtube](https://img.youtube.com/vi/rqjQ42EFRAQ/0.jpg)](https://youtu.be/rqjQ42EFRAQ)
+## Technical
+* Features a server to client proxy instance, allowing for the server to send keybind switching commands.
