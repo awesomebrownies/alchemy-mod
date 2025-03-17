@@ -1,5 +1,5 @@
 # Tangled in Scrapyard
-<div style="padding: 20px;"><img src="https://github.com/user-attachments/assets/2d790d66-4b7a-4efb-923d-40d8c5e9f4e6"></div><img src="https://scrapyard.hackclub.com/elements/wordmark.svg" width="200" >
+<img src="https://scrapyard.hackclub.com/elements/wordmark.svg" width="200" >
 
 `Tinkering Trashbeard` effect is gained from a certain potion.
 
