@@ -6,8 +6,7 @@ Scrapyard is a hackathon about making stupid inventions with others, and this pr
 **Captain Trashbeard Stirs** "*Agh! Those darn cords have me tangled up in circles.*" Unfortunately, to her dismay, Captain Trashbeard fumbles around and manages to swap her keybind for `Sneak` to `Attack/Destroy`. "*Oo-ooops!*". 
 
 ## Crafting
-Take a `tripwire hook` and combine in a stand with an `awkward potion`, and it reveals...
-A `Potion of Entanglement`!
+Take a `tripwire hook` and combine in a stand with an `awkward potion`, to reveal a `Potion of Entanglement`. Drink this, and the Captain Trashbeard herself will somehow tangle herself up in your controls and wreak havoc.
 
 ## Installation
 This project was created using **Java** and the **Fabric API**. It has both clientside and serverside code. Pre-requisites: Fabric Mod Loader: https://fabricmc.net/use/installer/
